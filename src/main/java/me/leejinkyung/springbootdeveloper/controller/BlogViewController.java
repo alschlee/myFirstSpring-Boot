@@ -16,7 +16,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @Controller
 public class BlogViewController {
-
     private  final BlogService blogService;
 
     @GetMapping("/articles")
@@ -25,7 +24,6 @@ public class BlogViewController {
                 .map(ArticleListViewResponse::new)
                 .toList();
         model.addAttribute("articles", articles);
-
         return "articleList";
     }
 
