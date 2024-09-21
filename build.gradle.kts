@@ -22,7 +22,7 @@ dependencies {
     testImplementation("org.springframework.security:spring-security-test")
 
     runtimeOnly("com.h2database:h2")
-    compileOnly("org.projectlombok:lombok")
+    implementation("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 
     implementation("io.jsonwebtoken:jjwt:0.9.1")
